@@ -1,65 +1,66 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title></title>
-    <meta charset="utf-8" />
+    <head>
+        <title></title>
+        <meta charset="utf-8" />
 
-    <script src="cordova.js"></script>
-    <script src="kendo/js/jquery.min.js"></script>
- <!--   
+        <script src="cordova.js"></script>
+        <script src="kendo/js/jquery.min.js"></script>
+        <!--   
         <script src="js/angular.min.js"></script>
-     <script src="kendo/js/kendo.mobile.min.js"></script>-->
-    <script src="kendo/js/kendo.all.min.js"></script>
+        <script src="kendo/js/kendo.mobile.min.js"></script>-->
+        <script src="kendo/js/kendo.all.min.js"></script>
 
-    <script src="scripts/app.js"></script>
+        <script src="scripts/app.js"></script>
 
-      <link href="kendo/styles/kendo.common.min.css" rel="stylesheet" />
-    <link href="kendo/styles/kendo.default.min.css" rel="stylesheet" />
-    <link href="kendo/styles/kendo.dataviz.min.css" rel="stylesheet" />
-    <!--<link href="kendo/styles/kendo.dataviz.default.min.css" rel="stylesheet" />-->
-      <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
-    <link href="styles/main.css" rel="stylesheet" />
+        <link href="kendo/styles/kendo.common.min.css" rel="stylesheet" />
+        <link href="kendo/styles/kendo.default.min.css" rel="stylesheet" />
+        <link href="kendo/styles/kendo.dataviz.min.css" rel="stylesheet" />
+        <!--<link href="kendo/styles/kendo.dataviz.default.min.css" rel="stylesheet" />-->
+        <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
+        <link href="styles/main.css" rel="stylesheet" />
 
- 
-    <style>
-         /* Grid columns with no width are collapsed if the space is not enough, thus min-width on the tables is needed */
-    .k-grid table
-    {
-        min-width: 600px;
-    }
-        .km-flat, .km-flat .km-navbar, .km-flat .k-toolbar, .km-flat .km-detail, .km-flat .km-content{
-            background-color:green;
-        }
+        <style>
+            /* Grid columns with no width are collapsed if the space is not enough, thus min-width on the tables is needed */
+            .k-grid table
+            {
+                min-width: 600px;
+            }
+            .km-flat, .km-flat .km-navbar, .km-flat .k-toolbar, .km-flat .km-detail, .km-flat .km-content
+            {
+                background-color: green;
+            }
 
-    /* Android's default browser doesn't support properly min-width on tables */
-    @media screen and (max-width: 699px) {
-        .km-phone .km-android .k-grid table
-        {
-            width: 600px;
-        }
-    }
-    </style>
-</head>
-<body >
- 
-    <div data-role="layout" data-id="main">
-        <div data-role="header">
-            <div data-role="navbar">
-                <span data-role="view-title"></span>
-               <!--<a data-role="button" data-click="SelectInfo">Foo</a>-->
-            </div>
-        </div>
-
-        <!-- application views will be rendered here -->
+            /* Android's default browser doesn't support properly min-width on tables */
+            @media screen and (max-width: 699px)
+            {
+                .km-phone .km-android .k-grid table
+                {
+                    width: 600px;
+                }
+            }
+        </style>
+    </head>
+    <body >
         
-        <div data-role="footer">
-            <div data-role="tabstrip">
-                <a href="views/home.html" data-icon="home">Home</a>   
-                <a href="views/settings.html" data-icon="settings">Settings</a>
-                <a href="views/contacts.html" data-icon="settings">Contacts</a>
+        <div data-role="layout" data-id="main">
+            <div data-role="header">
+                <div data-role="navbar">
+                    <span data-role="view-title"></span>
+                    <!--<a data-role="button" data-click="SelectInfo">Foo</a>-->
+                </div>
+            </div>
+            
+            <!-- application views will be rendered here -->
+            
+            <div data-role="footer">
+                <div data-role="tabstrip">
+                    <a href="views/home.html" data-icon="home">Home</a>
+                    <a href="views/settings.html" data-icon="settings">Settings</a>
+                    <a href="views/contacts.html" data-icon="settings">Contacts</a>
+                </div>
             </div>
         </div>
-    </div>
-
-</body>
+    
+    </body>
 </html>
